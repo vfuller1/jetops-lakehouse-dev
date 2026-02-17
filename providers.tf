@@ -22,9 +22,9 @@ provider "azurerm" {
     key_vault {
       purge_soft_delete_on_destroy = true
     }
-    # New flag: Allows Terraform to delete the old Resource Group even if it contains DNS zones or other resources
     resource_group {
       prevent_deletion_if_contains_resources = false
     }
   }
+  subscription_id = "57600a79-c6d9-4b38-986a-a7ade5669711"
 }
